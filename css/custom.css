@@ -18,11 +18,14 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus{
 .mainmenu__area .row {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .mainmenu__area .logo {
   display: flex;
   align-items: center;
-  height: 100%;
+}
+.mainmenu__area .logo a {
+  line-height: 1;
 }
 
 .main__menu > li > a::before {

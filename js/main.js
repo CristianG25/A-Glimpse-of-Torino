@@ -422,6 +422,14 @@ $("#ytplayer").on("YTPReady", function() {
 
 })(jQuery);
 
+// Hero video autoplay fallback
+document.addEventListener('DOMContentLoaded', function() {
+  var video = document.querySelector('.slider__container video');
+  if (video) {
+    video.play().catch(function() {});
+  }
+});
+
 
 
 

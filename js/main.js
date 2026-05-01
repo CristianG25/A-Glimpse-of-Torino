@@ -104,6 +104,8 @@ $('.mobile-menu nav').meanmenu({
       e.preventDefault();
       currentLimit = Math.min(currentLimit + PAGE_SIZE, total);
       $grid.isotope({ filter: getFilter() });
+      // Give newly visible items one frame to paint, then re-run layout
+      setTimeout(function() { $grid.isotope('layout'); }, 100);
       updateViewMore();
     });
 

@@ -14,6 +14,17 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus{
   outline: none;
 }
 
+/* Vertically center logo against the nav bar */
+.mainmenu__area .row {
+  display: flex;
+  align-items: center;
+}
+.mainmenu__area .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .main__menu > li > a::before {
   display: none;
 }

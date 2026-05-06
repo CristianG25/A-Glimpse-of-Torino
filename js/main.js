@@ -422,6 +422,13 @@ $("#ytplayer").on("YTPReady", function() {
 
 })(jQuery);
 
+// Make entire gallery tile clickable
+$(document).on('click', '.portfolio__wrap .portfolio', function(e) {
+  if (!$(e.target).closest('a[data-lightbox]').length) {
+    $(this).find('a[data-lightbox]').first().trigger('click');
+  }
+});
+
 // Hero video autoplay fallback
 document.addEventListener('DOMContentLoaded', function() {
   var video = document.querySelector('.slider__container video');

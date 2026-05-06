@@ -58,6 +58,12 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus{
 
 .portfolio__wrap .pro__item .portfolio__hover::after {
   border-radius: 8px;
+  background: rgba(0, 0, 0, 0.80);
+}
+
+/* Make entire gallery tile clickable */
+.portfolio__wrap .pro__item .portfolio {
+  cursor: pointer;
 }
 
 /* Rounded corners — lightbox popup */
@@ -68,6 +74,11 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus{
 
 .lightbox .lb-image {
   border-radius: 12px;
+  max-width: 90vw !important;
+  max-height: 82vh !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
 }
 
 /* Rounded corners — View More button */

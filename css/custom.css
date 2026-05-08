@@ -91,9 +91,128 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus{
   color: #8A3B4A;
 }
 
+/* Location detail: stat cards */
+.loc-stat-cards {
+  display: flex;
+  gap: 16px;
+  margin: 28px 0 32px;
+  flex-wrap: wrap;
+}
+.loc-stat-card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 18px 24px 22px;
+  flex: 1;
+  min-width: 150px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+}
+.loc-stat-card .loc-stat-label {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 6px;
+  font-weight: 400;
+  display: block;
+}
+.loc-stat-card .loc-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: block;
+}
+
+/* Location detail: reduce section padding */
+.htc__blog__list.ptb--130 {
+  padding: 50px 0;
+}
+
+/* Location detail: paragraph text color and line height */
+.event__details__sidebar p,
+.event__details__sidebar p.evnt__btl {
+  color: rgb(68, 68, 68) !important;
+  line-height: 32px !important;
+}
+
+/* Location detail: Playfair Display title */
+.event__details__sidebar h2:not(.title__line) {
+  font-family: 'Playfair Display', serif;
+  color: #8A3B4A;
+  margin-top: 0;
+}
+
+/* Breadcrumb hero height and top padding on detail pages */
+.ht__bradcaump__wrap {
+  height: 300px;
+}
+.bradcaump__inner {
+  padding-top: 80px;
+}
+
+/* Breadcrumb hero title — gradient matching homepage */
+.bradcaump-title {
+  background: linear-gradient(to bottom, #ffffff, #f1e7d6, #c9956a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Location detail: rounded corners on hero image and map */
+.event__dtl__thumb img {
+  border-radius: 12px;
+  height: auto !important;
+  object-fit: unset !important;
+}
+.map-contacts #googleMap iframe {
+  border-radius: 12px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+}
+
+/* Location detail: page navigation chevrons */
+.loc-page-nav {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.loc-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #8A3B4A;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+  line-height: 0;
+  padding-bottom: 1px;
+  transition: background 0.2s;
+}
+.loc-nav-btn:hover {
+  background: #6d2f3b;
+  color: #ffffff;
+  text-decoration: none;
+}
+.loc-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.loc-title-row h2 {
+  margin-bottom: 0 !important;
+}
+
 /* Rounded corners + shadow — featured location cards */
 .venue-2 {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+.venue-2 .thumbnail img {
+  width: 100%;
+  height: 236px;
+  object-fit: cover;
+  display: block;
 }
